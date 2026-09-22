@@ -1,0 +1,68 @@
+{
+  "name": "@satya/revenue-os",
+  "version": "0.1.0-rc.1",
+  "description": "Evidence-bounded, auditable commercial operating system for humans and AI agents.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "satya-revenue": "./bin/satya-revenue.mjs"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./core/*": "./src/core/*.js",
+    "./domain/*": "./src/domain/*.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "contracts/",
+    "skills/",
+    "adapters/",
+    "docs/",
+    "evals/corpus.js",
+    "evals/metadata.json",
+    "evals/run.js",
+    "evals/runner.js",
+    "examples/",
+    "tools/",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "doctor": "node tools/doctor.mjs",
+    "validate": "node bin/satya-revenue.mjs validate",
+    "test": "node --test",
+    "test:core": "node --test test/core*.test.js test/runtime*.test.js",
+    "test:domain": "node --test test/domain*.test.js test/adapters*.test.js",
+    "test:skills": "node --test test/skills*.test.js test/evals*.test.js",
+    "eval": "node bin/satya-revenue.mjs eval",
+    "docs:check": "node tools/check-docs.mjs",
+    "ci:check": "node tools/check-ci.mjs",
+    "licenses:check": "node tools/check-licenses.mjs",
+    "records:check": "node tools/check-records.mjs",
+    "examples:check": "node tools/check-examples.mjs",
+    "tree:check": "node tools/check-tree.mjs",
+    "format:check": "node tools/check-format.mjs",
+    "lint": "node tools/check-syntax.mjs",
+    "secrets:check": "node tools/secret-scan.mjs",
+    "release-check": "node tools/release-check.mjs",
+    "manifest": "node tools/generate-manifest.mjs",
+    "validation:receipt": "node tools/run-validation.mjs",
+    "verify": "npm run doctor && npm run format:check && npm run lint && npm test && npm run eval && npm run examples:check && npm run docs:check && npm run ci:check && npm run licenses:check && npm run secrets:check && npm run records:check && npm run tree:check && npm run manifest",
+    "verify:release": "npm run verify && npm run release-check"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "revenue-operations",
+    "agent-skills",
+    "evidence",
+    "evaluation",
+    "sales"
+  ],
+  "repository": null
+}
