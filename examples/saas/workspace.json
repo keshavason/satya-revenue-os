@@ -1,0 +1,11 @@
+{
+  "contractVersion": "1.0.0", "adapter": "../../adapters/saas/adapter.json", "fixture": "../../adapters/saas/fixture.json",
+  "goal": {"description": "Increase sustainable revenue by ten percent.", "targetRevenueIncreasePct": 10},
+  "economics": {"currency": "EUR", "period": "month", "inputs": {
+    "revenue": {"value": 24000, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "cogs": {"value": 5200, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "variableCosts": {"value": 1800, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "averageRevenuePerCustomer": {"value": 120, "unit": "currency/customer/period", "period": "month", "evidence": "observed"},
+    "churnRate": {"value": 0.035, "unit": "ratio", "period": "month", "evidence": "observed"}
+  }}, "dataClassification": "synthetic"
+}

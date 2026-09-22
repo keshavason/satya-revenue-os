@@ -1,0 +1,33 @@
+name: Skill or adapter proposal
+description: Propose a governed extension with evidence and tests.
+body:
+  - type: input
+    id: capability
+    attributes:
+      label: Capability and users
+    validations:
+      required: true
+  - type: textarea
+    id: contract
+    attributes:
+      label: Inputs, outputs, failures, evidence and compatibility
+    validations:
+      required: true
+  - type: textarea
+    id: permissions
+    attributes:
+      label: Permissions, data, network and side effects
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Sources, license and provenance
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Positive, failure, abstention and adversarial tests
+    validations:
+      required: true

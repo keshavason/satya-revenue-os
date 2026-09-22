@@ -1,0 +1,6 @@
+{
+  "id": "industrial-maker-001", "tenantId": "example-industrial", "asOf": "2026-09-22T00:00:00.000Z",
+  "goal": "Increase profitable accepted orders without exceeding plant capacity.", "sourceNote": "Synthetic RC1 fixture; not observed company data.",
+  "lifecycleState": "quoted", "metrics": {"qualified-to-order-rate": 0.21, "sales-cycle": 168, "backlog-margin": 0.29, "on-time-delivery": 0.93},
+  "constraints": {"availableMachineHoursNextQuarter": 3200, "committedMachineHours": 2740}, "evidence": "modelled"
+}

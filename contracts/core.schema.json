@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://satya.local/contracts/core.schema.json",
+  "title": "SATYA Revenue OS RC1 core contracts",
+  "$defs": {
+    "contractVersion": { "const": "1.0.0" },
+    "instant": { "type": "string", "format": "date-time" },
+    "claim": {
+      "type": "object",
+      "required": ["contractVersion", "id", "text", "class", "evidenceState", "sources", "confidence", "createdAt", "validity", "contradictions", "derivedFrom"],
+      "properties": {
+        "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 },
+        "class": { "enum": ["observed_fact", "external_datum", "inference", "hypothesis", "opinion", "prediction", "recommendation"] },
+        "evidenceState": { "enum": ["unknown", "declared", "observed", "tested", "verified", "blocked"] },
+        "sources": { "type": "array", "items": { "type": "string" } }, "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "createdAt": { "$ref": "#/$defs/instant" }, "validity": { "type": "object" }, "contradictions": { "type": "array", "items": { "type": "string" } }, "derivedFrom": { "type": "array", "items": { "type": "string" } }
+      }, "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object", "required": ["contractVersion", "id", "state", "source", "capturedAt", "contentHash", "trust", "supports", "contradicts"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "state": { "enum": ["unknown", "declared", "observed", "tested", "verified", "blocked"] }, "source": { "type": "string" }, "capturedAt": { "$ref": "#/$defs/instant" }, "contentHash": { "type": "string" }, "trust": { "enum": ["trusted", "untrusted", "quarantined"] }, "supports": { "type": "array", "items": { "type": "string" } }, "contradicts": { "type": "array", "items": { "type": "string" } } }, "additionalProperties": false
+    },
+    "runEvent": {
+      "type": "object", "required": ["contractVersion", "runId", "sequence", "type", "occurredAt", "payload", "previousHash"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "runId": { "type": "string" }, "sequence": { "type": "integer", "minimum": 0 }, "type": { "type": "string" }, "occurredAt": { "$ref": "#/$defs/instant" }, "payload": { "type": "object" }, "previousHash": { "type": ["string", "null"] } }, "additionalProperties": false
+    },
+    "approval": {
+      "type": "object", "required": ["contractVersion", "id", "tenantId", "operationHash", "destination", "fields", "amount", "expiresAt", "maxUses", "uses", "status"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "tenantId": { "type": "string" }, "operationHash": { "type": "string" }, "destination": { "type": "string" }, "fields": { "type": "array", "items": { "type": "string" } }, "amount": {}, "expiresAt": { "$ref": "#/$defs/instant" }, "maxUses": { "type": "integer", "minimum": 1 }, "uses": { "type": "integer", "minimum": 0 }, "status": { "type": "string" } }, "additionalProperties": false
+    },
+    "effectRequest": {
+      "type": "object", "required": ["contractVersion", "operationId", "tenantId", "capability", "effect", "destination", "fields", "arguments", "amount", "sourceTrust", "provenanceId", "approvalId"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "operationId": { "type": "string" }, "tenantId": { "type": "string" }, "capability": { "type": "string" }, "effect": { "type": "string" }, "destination": { "type": "string" }, "fields": { "type": "array", "items": { "type": "string" } }, "arguments": { "type": "object" }, "amount": {}, "sourceTrust": { "enum": ["trusted", "untrusted", "quarantined"] }, "provenanceId": { "type": "string", "minLength": 1 }, "approvalId": { "type": ["string", "null"] } }, "additionalProperties": false
+    },
+    "effectReceipt": {
+      "type": "object", "required": ["contractVersion", "operationId", "tenantId", "state", "attempt", "requestedAt", "updatedAt", "requestHash", "dryRun"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "operationId": { "type": "string" }, "tenantId": { "type": "string" }, "state": { "enum": ["not-started", "dispatched", "succeeded", "failed", "indeterminate", "compensated"] }, "attempt": { "type": "integer", "minimum": 0 }, "requestedAt": { "$ref": "#/$defs/instant" }, "updatedAt": { "$ref": "#/$defs/instant" }, "requestHash": { "type": "string" }, "dryRun": { "type": "boolean" }, "result": {}, "failure": {}, "compensation": {} }, "additionalProperties": false
+    },
+    "memoryRecord": {
+      "type": "object", "required": ["contractVersion", "id", "type", "tenantId", "purpose", "source", "actor", "sensitivity", "confidence", "validFrom", "validTo", "reviewAt", "contradictions", "status", "content"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "type": { "type": "string" }, "tenantId": { "type": "string" }, "purpose": { "type": "array", "items": { "type": "string" } }, "source": { "type": "string" }, "actor": { "type": "string" }, "sensitivity": { "enum": ["public", "internal", "confidential", "restricted"] }, "confidence": { "type": "number", "minimum": 0, "maximum": 1 }, "validFrom": { "$ref": "#/$defs/instant" }, "validTo": { "type": ["string", "null"] }, "reviewAt": { "type": ["string", "null"] }, "contradictions": { "type": "array", "items": { "type": "string" } }, "status": { "enum": ["candidate", "active", "superseded", "invalidated", "expired"] }, "content": {} }, "additionalProperties": false
+    },
+    "skillManifest": {
+      "type": "object", "required": ["contractVersion", "id", "version", "inputSchema", "outputSchema", "preconditions", "postconditions", "failureCodes", "evidence", "permissions", "effects", "approval", "cost", "compatibility", "entrypoint"],
+      "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "name": { "type": "string" }, "version": { "type": "string" }, "description": { "type": "string" }, "inputSchema": { "type": "string" }, "outputSchema": { "type": "string" }, "preconditions": { "type": "array" }, "postconditions": { "type": "array" }, "failureCodes": { "type": "array" }, "evidence": { "type": "array" }, "permissions": { "type": "array" }, "effects": { "type": "array" }, "approval": { "type": "object" }, "cost": { "type": "object" }, "compatibility": { "type": "array" }, "entrypoint": { "type": "string" } }, "additionalProperties": false
+    },
+    "economicInput": { "type": "object", "required": ["contractVersion", "currency", "period", "inputs"], "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "currency": { "type": "string" }, "period": { "type": "string" }, "inputs": { "type": "object" } }, "additionalProperties": false },
+    "economicResult": { "type": "object", "required": ["contractVersion", "kind", "status", "currency", "period", "values", "observedInputs", "modelledInputs", "assumptions", "missingValues", "sensitivity", "confidenceLimitations", "recommendation"], "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "kind": { "const": "EconomicResult" }, "status": { "type": "string" }, "currency": { "type": "string" }, "period": { "type": "string" }, "values": { "type": "object" }, "observedInputs": { "type": "array" }, "modelledInputs": { "type": "array" }, "assumptions": { "type": "array" }, "missingValues": { "type": "array" }, "sensitivity": { "type": "array" }, "confidenceLimitations": { "type": "array" }, "recommendation": { "type": "object" } }, "additionalProperties": false },
+    "experimentPlan": { "type": "object", "required": ["contractVersion", "id", "decision", "estimand", "population", "randomizationUnit", "variants", "allocation", "baseline", "mde", "power", "metrics", "duration", "stoppingRule", "multiplicityPlan", "confounders", "decisionRule"], "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "decision": {}, "estimand": {}, "population": {}, "randomizationUnit": {}, "variants": { "type": "array" }, "allocation": {}, "baseline": {}, "mde": {}, "power": {}, "metrics": { "type": "array" }, "duration": {}, "stoppingRule": {}, "multiplicityPlan": {}, "confounders": {}, "decisionRule": {} }, "additionalProperties": false },
+    "experimentResult": { "type": "object", "required": ["contractVersion", "planId", "status", "observations", "uncertainty", "srm", "decision", "warnings"], "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "planId": { "type": "string" }, "status": { "type": "string" }, "observations": { "type": "array" }, "uncertainty": {}, "srm": {}, "decision": {}, "warnings": { "type": "array" } }, "additionalProperties": false },
+    "adapter": { "type": "object", "required": ["contractVersion", "id", "version", "name", "vertical", "economicUnit", "salesMotion", "lifecycleStates", "metricDefinitions", "constraints", "channels", "complianceNotes", "economicDefaults", "requiredEvidence", "unsupportedAssumptions", "planningProfile"], "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "version": { "type": "string" }, "name": { "type": "string" }, "vertical": { "type": "string" }, "economicUnit": { "type": "string" }, "salesMotion": { "type": "string" }, "lifecycleStates": { "type": "array" }, "metricDefinitions": { "type": "array" }, "constraints": { "type": "array" }, "channels": { "type": "array" }, "complianceNotes": { "type": "array" }, "economicDefaults": { "type": "array" }, "requiredEvidence": { "type": "array" }, "unsupportedAssumptions": { "type": "array" }, "planningProfile": { "type": "object" } }, "additionalProperties": false },
+    "evalCase": { "type": "object", "required": ["contractVersion", "id", "version", "adapter", "kind", "input", "expected", "scorers"], "properties": { "contractVersion": { "$ref": "#/$defs/contractVersion" }, "id": { "type": "string" }, "version": { "type": "string" }, "adapter": { "type": "string" }, "kind": { "type": "string" }, "input": {}, "expected": {}, "scorers": { "type": "array" } }, "additionalProperties": false }
+  }
+}

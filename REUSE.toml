@@ -1,0 +1,7 @@
+version = 1
+
+[[annotations]]
+path = ["**/*.md", "**/*.json", "**/*.yaml", "**/*.yml", ".nvmrc", ".editorconfig", ".gitignore", ".gitattributes"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 SATYA Revenue OS contributors"
+SPDX-License-Identifier = "Apache-2.0"

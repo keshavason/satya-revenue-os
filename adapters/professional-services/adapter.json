@@ -1,0 +1,18 @@
+{
+  "contractVersion": "1.0.0", "id": "satya.adapter.professional-services", "version": "0.1.0", "name": "Professional Services", "vertical": "professional-services",
+  "economicUnit": "engagement", "salesMotion": "consultative project and retainer sales",
+  "lifecycleStates": ["UNKNOWN", "inquiry", "qualified", "proposal", "contracted", "active", "delivered", "renewed", "lost"],
+  "metricDefinitions": [
+    {"id": "proposal-win-rate", "unit": "ratio", "formula": "won proposals / decided proposals", "period": "quarter", "grain": "segment"},
+    {"id": "billable-utilization", "unit": "ratio", "formula": "billable hours / available delivery hours", "period": "month", "grain": "team"},
+    {"id": "engagement-margin", "unit": "ratio", "formula": "(fees - attributable delivery cost) / fees", "period": "engagement", "grain": "engagement"},
+    {"id": "sales-cycle", "unit": "days", "formula": "contract date - qualified date", "period": "quarter", "grain": "engagement"}
+  ],
+  "constraints": ["Billable capacity and specialist availability constrain accepted work.", "Revenue timing differs from cash collection and delivery."],
+  "channels": ["referral", "partner", "thought-leadership", "targeted-outbound"],
+  "complianceNotes": ["Protect client-confidential information in case studies and qualification.", "Conflict checks may precede proposals."],
+  "economicDefaults": [{"name": "proposal-validity", "value": 30, "unit": "days", "evidence": "modelled", "bounded": true, "asOf": "2026-09-22", "source": "RC1 scenario assumption"}],
+  "requiredEvidence": ["available delivery capacity by capability", "engagement-level delivery cost and collections"],
+  "unsupportedAssumptions": ["booked fees equal available cash", "all staff hours are substitutable", "pipeline value is earned revenue"],
+  "planningProfile": {"typicalSalesCycleDays": 60, "primaryDecisionMetric": "engagement-margin"}
+}

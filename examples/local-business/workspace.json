@@ -1,0 +1,9 @@
+{
+  "contractVersion": "1.0.0", "adapter": "../../adapters/local-business/adapter.json", "fixture": "../../adapters/local-business/fixture.json",
+  "goal": {"description": "Increase sustainable revenue by ten percent.", "targetRevenueIncreasePct": 10},
+  "economics": {"currency": "EUR", "period": "month", "inputs": {
+    "revenue": {"value": 52920, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "cogs": {"value": 19600, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "variableCosts": {"value": 8450, "unit": "EUR", "period": "month", "evidence": "observed"}
+  }}, "dataClassification": "synthetic"
+}

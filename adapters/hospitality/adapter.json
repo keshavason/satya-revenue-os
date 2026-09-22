@@ -1,0 +1,18 @@
+{
+  "contractVersion": "1.0.0", "id": "satya.adapter.hospitality", "version": "0.1.0", "name": "Hospitality", "vertical": "hospitality",
+  "economicUnit": "room-night", "salesMotion": "perishable inventory booking",
+  "lifecycleStates": ["UNKNOWN", "search", "inquiry", "booked", "checked-in", "fulfilled", "cancelled", "no-show", "repeat"],
+  "metricDefinitions": [
+    {"id": "occupancy", "unit": "ratio", "formula": "sold room-nights / available room-nights", "period": "day", "grain": "property"},
+    {"id": "adr", "unit": "EUR/room-night", "formula": "room revenue / sold room-nights", "period": "day", "grain": "property"},
+    {"id": "revpar", "unit": "EUR/available-room", "formula": "room revenue / available room-nights", "period": "day", "grain": "property"},
+    {"id": "cancellation-rate", "unit": "ratio", "formula": "cancelled bookings / confirmed bookings", "period": "month", "grain": "channel"}
+  ],
+  "constraints": ["Room inventory is perishable and fixed by service date.", "Staffing, cleaning, and rate restrictions constrain occupancy tactics."],
+  "channels": ["direct-booking", "ota", "corporate", "walk-in"],
+  "complianceNotes": ["Guest identity and stay information require strict access controls.", "Rate and tax rules vary by jurisdiction and need human confirmation."],
+  "economicDefaults": [{"name": "booking-window", "value": 45, "unit": "days", "evidence": "modelled", "bounded": true, "asOf": "2026-09-22", "source": "RC1 scenario assumption"}],
+  "requiredEvidence": ["available and sold inventory by service date", "net room revenue, channel fees, cancellations, and refunds"],
+  "unsupportedAssumptions": ["SaaS churn represents room inventory", "all booked revenue will be fulfilled", "OTA credit is incremental demand"],
+  "planningProfile": {"typicalSalesCycleDays": 14, "primaryDecisionMetric": "revpar"}
+}

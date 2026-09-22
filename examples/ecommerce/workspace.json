@@ -1,0 +1,11 @@
+{
+  "contractVersion": "1.0.0", "adapter": "../../adapters/ecommerce/adapter.json", "fixture": "../../adapters/ecommerce/fixture.json",
+  "goal": {"description": "Increase sustainable revenue by ten percent.", "targetRevenueIncreasePct": 10},
+  "economics": {"currency": "EUR", "period": "month", "inputs": {
+    "revenue": {"value": 74000, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "cogs": {"value": 34000, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "deliveryCosts": {"value": 11200, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "visitors": {"value": 37000, "unit": "sessions", "period": "month", "evidence": "observed"},
+    "convertedCustomers": {"value": 999, "unit": "customers", "period": "month", "evidence": "observed"}
+  }}, "dataClassification": "synthetic"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "independent-hotel-001", "tenantId": "example-hotel", "asOf": "2026-09-22T00:00:00.000Z",
+  "goal": "Improve profitable room yield without hiding cancellations.", "sourceNote": "Synthetic RC1 fixture; not observed company data.",
+  "lifecycleState": "booked", "metrics": {"occupancy": 0.68, "adr": 132, "revpar": 89.76, "cancellation-rate": 0.14},
+  "constraints": {"rooms": 48, "availableRoomNightsNext30Days": 1440}, "evidence": "modelled"
+}

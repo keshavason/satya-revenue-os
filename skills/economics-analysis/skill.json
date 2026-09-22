@@ -1,0 +1,55 @@
+{
+  "contractVersion": "1.0.0",
+  "id": "economics-analysis",
+  "name": "economics-analysis",
+  "version": "0.1.0-rc.1",
+  "description": "Calculate guarded commercial unit economics from explicit numeric inputs. Use for decision support; do not turn modelled values into observed facts or optimize revenue while contribution is negative.",
+  "inputSchema": "../input.schema.json",
+  "outputSchema": "../output.schema.json",
+  "preconditions": [
+    "Input is supplied as structured data",
+    "Tenant and authority fields are explicit when material"
+  ],
+  "postconditions": [
+    "Output is a typed artifact or abstention",
+    "No external effect occurs"
+  ],
+  "failureCodes": [
+    "INVALID_INPUT",
+    "INSUFFICIENT_INFORMATION",
+    "INSUFFICIENT_EVIDENCE",
+    "INVALID_DENOMINATOR",
+    "INCOMPLETE_EXPERIMENT_CONTRACT",
+    "POST_HOC_DESIGN",
+    "SKILL_FAILURE"
+  ],
+  "evidence": [
+    "preserve-class",
+    "preserve-contradictions",
+    "confidence-does-not-promote-evidence"
+  ],
+  "permissions": [
+    "none"
+  ],
+  "effects": [
+    "none"
+  ],
+  "approval": {
+    "required": false,
+    "reason": "Pure analysis skill; no effects are available."
+  },
+  "cost": {
+    "networkRequests": 0,
+    "externalWrites": 0
+  },
+  "compatibility": [
+    "saas",
+    "ecommerce",
+    "professional-services",
+    "local-business",
+    "hospitality",
+    "industrial-b2b"
+  ],
+  "entrypoint": "./entrypoint.js"
+}
+

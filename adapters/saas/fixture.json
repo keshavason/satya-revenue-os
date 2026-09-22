@@ -1,0 +1,6 @@
+{
+  "id": "saas-small-team-001", "tenantId": "example-saas", "asOf": "2026-09-22T00:00:00.000Z",
+  "goal": "Increase sustainable recurring revenue without hiding churn.", "sourceNote": "Synthetic RC1 fixture; not observed company data.",
+  "lifecycleState": "active", "metrics": {"mrr": 24000, "logo-retention": 0.965, "net-revenue-retention": 1.02, "contribution-margin": 0.71},
+  "constraints": {"onboardingSlotsPerMonth": 35}, "evidence": "modelled"
+}

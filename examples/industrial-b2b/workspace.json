@@ -1,0 +1,11 @@
+{
+  "contractVersion": "1.0.0", "adapter": "../../adapters/industrial-b2b/adapter.json", "fixture": "../../adapters/industrial-b2b/fixture.json",
+  "goal": {"description": "Increase sustainable revenue by ten percent.", "targetRevenueIncreasePct": 10},
+  "economics": {"currency": "EUR", "period": "quarter", "inputs": {
+    "pipelineValue": {"value": 3100000, "unit": "EUR", "period": "quarter", "evidence": "observed"},
+    "activeOpportunities": {"value": 18, "unit": "opportunities", "period": "quarter", "evidence": "observed"},
+    "wonDeals": {"value": 3, "unit": "deals", "period": "quarter", "evidence": "observed"},
+    "totalDeals": {"value": 14, "unit": "deals", "period": "quarter", "evidence": "observed"},
+    "salesCycleDays": {"value": 168, "unit": "days", "evidence": "observed"}
+  }}, "dataClassification": "synthetic"
+}

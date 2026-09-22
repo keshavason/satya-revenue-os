@@ -1,0 +1,6 @@
+{
+  "id": "local-clinic-001", "tenantId": "example-local", "asOf": "2026-09-22T00:00:00.000Z",
+  "goal": "Fill viable appointment capacity without increasing no-shows.", "sourceNote": "Synthetic RC1 fixture; not observed company data.",
+  "lifecycleState": "completed", "metrics": {"booking-conversion": 0.44, "show-rate": 0.88, "revenue-per-slot": 63, "contribution-margin": 0.47},
+  "constraints": {"weeklySlots": 210, "occupiedSlots": 174}, "evidence": "modelled"
+}

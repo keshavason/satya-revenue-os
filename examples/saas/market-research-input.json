@@ -1,0 +1,17 @@
+{
+  "question": "Which supplied observations support a retention-first growth hypothesis?",
+  "asOf": "2026-09-22",
+  "sources": [
+    {
+      "id": "synthetic-cohort-note",
+      "claimClass": "observed-fact",
+      "evidenceState": "observed",
+      "observations": [
+        "The synthetic mature cohort retains more accounts than the latest cohort.",
+        "Support capacity is the declared operational constraint."
+      ]
+    }
+  ],
+  "contradictions": [],
+  "dataClassification": "synthetic"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "corpusVersion": "0.1.0-rc.1",
+  "fixtureVersion": "0.1.0-rc.1",
+  "policyVersion": "0.1.0-rc.1",
+  "skillVersions": { "portfolio": "0.1.0-rc.1" },
+  "adapterVersions": { "portfolio": "0.1.0-rc.1" },
+  "scorerVersion": "1.0.0",
+  "configuration": { "offline": true, "semanticJudge": false, "executionMode": "fixture-conformance" },
+  "repositoryRevision": "working-tree",
+  "runtime": "node>=22",
+  "generatedAt": "2026-09-22T00:00:00.000Z",
+  "integrity": { "algorithm": "sha256", "digest": "fe8cb51e85be9fa7df6ff5aab44dc83af5a1560254bfa6969cc2b46b6fe8f5b5" }
+}

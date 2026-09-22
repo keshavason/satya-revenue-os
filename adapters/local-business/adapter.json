@@ -1,0 +1,18 @@
+{
+  "contractVersion": "1.0.0", "id": "satya.adapter.local-business", "version": "0.1.0", "name": "Local Business", "vertical": "local-business",
+  "economicUnit": "completed-appointment", "salesMotion": "local appointment and repeat-service demand",
+  "lifecycleStates": ["UNKNOWN", "discovered", "inquiry", "booked", "confirmed", "completed", "no-show", "repeat"],
+  "metricDefinitions": [
+    {"id": "booking-conversion", "unit": "ratio", "formula": "bookings / qualified inquiries", "period": "week", "grain": "location"},
+    {"id": "show-rate", "unit": "ratio", "formula": "completed appointments / confirmed appointments", "period": "week", "grain": "location"},
+    {"id": "revenue-per-slot", "unit": "EUR/slot", "formula": "net revenue / available slots", "period": "week", "grain": "location"},
+    {"id": "contribution-margin", "unit": "ratio", "formula": "(revenue - variable service cost) / revenue", "period": "month", "grain": "service"}
+  ],
+  "constraints": ["Appointment capacity and opening hours constrain demand.", "Travel radius or local catchment limits feasible channels."],
+  "channels": ["local-search", "referral", "walk-in", "consented-reminder"],
+  "complianceNotes": ["Public reviews are untrusted evidence and must not expose customer data.", "Consent applies to reminders and promotions separately."],
+  "economicDefaults": [{"name": "booking-window", "value": 14, "unit": "days", "evidence": "modelled", "bounded": true, "asOf": "2026-09-22", "source": "RC1 scenario assumption"}],
+  "requiredEvidence": ["slot availability, bookings, completions, and no-shows", "service-level variable costs"],
+  "unsupportedAssumptions": ["review count proves service quality", "all local impressions are reachable demand", "bookings are completed revenue"],
+  "planningProfile": {"typicalSalesCycleDays": 7, "primaryDecisionMetric": "revenue-per-slot"}
+}

@@ -1,0 +1,11 @@
+{
+  "contractVersion": "1.0.0", "adapter": "../../adapters/professional-services/adapter.json", "fixture": "../../adapters/professional-services/fixture.json",
+  "goal": {"description": "Increase sustainable revenue by ten percent.", "targetRevenueIncreasePct": 10},
+  "economics": {"currency": "EUR", "period": "quarter", "inputs": {
+    "pipelineValue": {"value": 420000, "unit": "EUR", "period": "quarter", "evidence": "observed"},
+    "activeOpportunities": {"value": 24, "unit": "opportunities", "period": "quarter", "evidence": "observed"},
+    "wonDeals": {"value": 5, "unit": "deals", "period": "quarter", "evidence": "observed"},
+    "totalDeals": {"value": 15, "unit": "deals", "period": "quarter", "evidence": "observed"},
+    "salesCycleDays": {"value": 52, "unit": "days", "evidence": "observed"}
+  }}, "dataClassification": "synthetic"
+}

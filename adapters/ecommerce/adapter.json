@@ -1,0 +1,18 @@
+{
+  "contractVersion": "1.0.0", "id": "satya.adapter.ecommerce", "version": "0.1.0", "name": "Ecommerce", "vertical": "ecommerce",
+  "economicUnit": "order", "salesMotion": "transactional digital commerce",
+  "lifecycleStates": ["UNKNOWN", "visit", "product-view", "cart", "checkout", "ordered", "fulfilled", "returned", "repeat"],
+  "metricDefinitions": [
+    {"id": "checkout-conversion", "unit": "ratio", "formula": "orders / eligible sessions", "period": "week", "grain": "channel"},
+    {"id": "average-order-value", "unit": "EUR/order", "formula": "net sales / orders", "period": "week", "grain": "order"},
+    {"id": "return-rate", "unit": "ratio", "formula": "returned orders / fulfilled orders", "period": "month", "grain": "offer"},
+    {"id": "contribution-margin", "unit": "ratio", "formula": "(net sales - cogs - fulfillment - payment fees - returns) / net sales", "period": "month", "grain": "offer"}
+  ],
+  "constraints": ["Inventory and fulfillment capacity constrain demand capture.", "Returns and discounts must be included in contribution."],
+  "channels": ["organic-search", "paid-search", "marketplace", "email"],
+  "complianceNotes": ["Consent and suppression rules apply to lifecycle messaging.", "Avoid sensitive inferred customer segments."],
+  "economicDefaults": [{"name": "return-window", "value": 30, "unit": "days", "evidence": "modelled", "bounded": true, "asOf": "2026-09-22", "source": "RC1 scenario assumption"}],
+  "requiredEvidence": ["order-level net sales, cost, fulfillment, and returns", "channel spend with attribution limitations"],
+  "unsupportedAssumptions": ["gross merchandise value equals revenue", "last-click credit is incremental lift", "unfulfilled orders are earned revenue"],
+  "planningProfile": {"typicalSalesCycleDays": 1, "primaryDecisionMetric": "contribution-margin"}
+}

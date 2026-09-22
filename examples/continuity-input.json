@@ -1,0 +1,22 @@
+{
+  "goal": "Prepare the next evidence-bounded commercial cycle",
+  "tenantId": "synthetic-tenant-a",
+  "records": [
+    {
+      "id": "decision-1",
+      "tenantId": "synthetic-tenant-a",
+      "status": "active",
+      "decision": "Protect contribution margin",
+      "risks": [],
+      "source": "synthetic-worklog"
+    },
+    {
+      "id": "other-tenant",
+      "tenantId": "synthetic-tenant-b",
+      "status": "active",
+      "decision": "Must not be returned",
+      "risks": [],
+      "source": "synthetic-private-note"
+    }
+  ]
+}

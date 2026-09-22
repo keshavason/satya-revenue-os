@@ -1,0 +1,9 @@
+{
+  "contractVersion": "1.0.0", "adapter": "../../adapters/hospitality/adapter.json", "fixture": "../../adapters/hospitality/fixture.json",
+  "goal": {"description": "Increase sustainable revenue by ten percent.", "targetRevenueIncreasePct": 10},
+  "economics": {"currency": "EUR", "period": "month", "inputs": {
+    "revenue": {"value": 129254, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "cogs": {"value": 18300, "unit": "EUR", "period": "month", "evidence": "observed"},
+    "deliveryCosts": {"value": 51200, "unit": "EUR", "period": "month", "evidence": "observed"}
+  }}, "dataClassification": "synthetic"
+}

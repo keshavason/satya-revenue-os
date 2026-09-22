@@ -1,0 +1,8 @@
+node_modules/
+.satya-workspace/
+coverage/
+dist/
+*.log
+evals/results/*.json
+evals/results/*.md
+!evals/results/.gitkeep

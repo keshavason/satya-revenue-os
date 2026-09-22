@@ -1,0 +1,6 @@
+{
+  "id": "services-studio-001", "tenantId": "example-studio", "asOf": "2026-09-22T00:00:00.000Z",
+  "goal": "Increase profitable engagements without overbooking specialists.", "sourceNote": "Synthetic RC1 fixture; not observed company data.",
+  "lifecycleState": "proposal", "metrics": {"proposal-win-rate": 0.34, "billable-utilization": 0.76, "engagement-margin": 0.42, "sales-cycle": 52},
+  "constraints": {"specialistDaysNextQuarter": 180}, "evidence": "modelled"
+}

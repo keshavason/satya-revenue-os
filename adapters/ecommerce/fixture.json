@@ -1,0 +1,6 @@
+{
+  "id": "ecommerce-shop-001", "tenantId": "example-shop", "asOf": "2026-09-22T00:00:00.000Z",
+  "goal": "Grow net sales while protecting fulfillment and contribution.", "sourceNote": "Synthetic RC1 fixture; not observed company data.",
+  "lifecycleState": "fulfilled", "metrics": {"checkout-conversion": 0.027, "average-order-value": 74, "return-rate": 0.09, "contribution-margin": 0.31},
+  "constraints": {"ordersPerDay": 140, "warehouseCapacityPerDay": 170}, "evidence": "modelled"
+}

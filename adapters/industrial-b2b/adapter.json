@@ -1,0 +1,18 @@
+{
+  "contractVersion": "1.0.0", "id": "satya.adapter.industrial-b2b", "version": "0.1.0", "name": "Industrial B2B", "vertical": "industrial-b2b",
+  "economicUnit": "accepted-order", "salesMotion": "long-cycle technical and procurement sale",
+  "lifecycleStates": ["UNKNOWN", "identified", "qualified", "technical-review", "quoted", "pilot", "contracted", "backlog", "delivered", "reorder", "lost"],
+  "metricDefinitions": [
+    {"id": "qualified-to-order-rate", "unit": "ratio", "formula": "accepted orders / decided qualified opportunities", "period": "quarter", "grain": "segment"},
+    {"id": "sales-cycle", "unit": "days", "formula": "accepted order date - qualification date", "period": "quarter", "grain": "opportunity"},
+    {"id": "backlog-margin", "unit": "ratio", "formula": "(contract value - estimated attributable cost) / contract value", "period": "order", "grain": "order"},
+    {"id": "on-time-delivery", "unit": "ratio", "formula": "on-time delivered orders / delivered orders", "period": "quarter", "grain": "plant"}
+  ],
+  "constraints": ["Engineering, production capacity, and supplier lead times constrain order acceptance.", "Technical qualification and procurement stages cannot be collapsed into a click funnel."],
+  "channels": ["account-development", "distributor", "trade-event", "inbound-rfq"],
+  "complianceNotes": ["Export, sanctions, safety, and sector rules require jurisdiction-specific review.", "Customer drawings and specifications may be confidential."],
+  "economicDefaults": [{"name": "planning-horizon", "value": 18, "unit": "months", "evidence": "modelled", "bounded": true, "asOf": "2026-09-22", "source": "RC1 scenario assumption"}],
+  "requiredEvidence": ["dated opportunity stage history and buying-group evidence", "capacity, lead-time, order cost, and backlog evidence"],
+  "unsupportedAssumptions": ["click conversion represents procurement", "quoted value is earned revenue", "all capacity is interchangeable"],
+  "planningProfile": {"typicalSalesCycleDays": 180, "primaryDecisionMetric": "backlog-margin"}
+}

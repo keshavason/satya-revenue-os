@@ -1,0 +1,23 @@
+{
+  "contractVersion": "1.0.0",
+  "id": "satya.adapter.saas",
+  "version": "0.1.0",
+  "name": "SaaS",
+  "vertical": "saas",
+  "economicUnit": "account-month",
+  "salesMotion": "product-led and sales-assisted recurring revenue",
+  "lifecycleStates": ["UNKNOWN", "visitor", "trial", "qualified", "active", "at-risk", "churned", "renewed"],
+  "metricDefinitions": [
+    {"id": "mrr", "unit": "EUR/month", "formula": "sum(active recurring charges)", "period": "month", "grain": "account"},
+    {"id": "logo-retention", "unit": "ratio", "formula": "retained logos / starting logos", "period": "month", "grain": "cohort"},
+    {"id": "net-revenue-retention", "unit": "ratio", "formula": "ending recurring revenue from cohort / starting recurring revenue", "period": "month", "grain": "cohort"},
+    {"id": "contribution-margin", "unit": "ratio", "formula": "(revenue - variable service costs) / revenue", "period": "month", "grain": "offer"}
+  ],
+  "constraints": ["Onboarding and support capacity can constrain growth.", "Billing intervals must not be mixed without normalization."],
+  "channels": ["product-led", "content", "partner", "outbound"],
+  "complianceNotes": ["Minimize personal usage telemetry and respect tenant boundaries.", "Do not treat product activity as consent for outreach."],
+  "economicDefaults": [{"name": "planning-horizon", "value": 12, "unit": "months", "evidence": "modelled", "bounded": true, "asOf": "2026-09-22", "source": "RC1 scenario assumption"}],
+  "requiredEvidence": ["cohort-level recurring revenue and churn history", "incremental and fully-loaded acquisition cost"],
+  "unsupportedAssumptions": ["all usage predicts renewal", "last-touch revenue is incremental", "SaaS churn applies to non-recurring inventory"],
+  "planningProfile": {"typicalSalesCycleDays": 30, "primaryDecisionMetric": "contribution-margin"}
+}
