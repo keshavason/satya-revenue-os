@@ -54,7 +54,7 @@ See the [risk-bounded recursive review design](docs/REFLECTIVE-LOOP.md): propose
 
 ## Federated expansion without duplication (proposal)
 
-The proposed [SATYA Commons common reference](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) is maintained in **satya-review**, not copied here. SATYA Revenue OS is a domain-specific, opt-in adaptation for commercial decisions; any future adoption must pin a reviewed revision, document differences, and preserve its own policy, licensing and owner approval. This link grants no cross-project authority or runtime integration. **No change to RC1's dry-run-only operation.**
+The proposed [SATYA Commons common reference](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) is maintained in **satya-review**, not copied here. SATYA Revenue OS is a domain-specific, opt-in adaptation for commercial decisions; any future adoption must pin a reviewed revision, document differences, and preserve its own policy, licensing and owner approval. A future owner may use the [minimal adoption contract](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md) to record an exact commit, scope, differences, tests and rollback. **The links above are mutable draft-branch links for review, not a version lock.** This link grants no cross-project authority or runtime integration. **No change to RC1's dry-run-only operation.**
 
 ## Human autonomy and non-manipulative commerce (proposed)
 
