@@ -52,6 +52,10 @@ These principles are **review and design criteria**, not a claim that RC1 autono
 
 See the [risk-bounded recursive review design](docs/REFLECTIVE-LOOP.md): proposer → critical mirror → fallible guide → optional meta-review, followed by accountable human authorization where needed. This loop addresses disagreement, common-mode errors and cumulative effects and reopens judgments as evidence changes. It is **not implemented in RC1**; no reviewer consensus can enable an external effect.
 
+## Federated expansion without duplication (proposal)
+
+The proposed [SATYA Commons common reference](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) is maintained in **satya-review**, not copied here. SATYA Revenue OS is a domain-specific, opt-in adaptation for commercial decisions; any future adoption must pin a reviewed revision, document differences, and preserve its own policy, licensing and owner approval. This link grants no cross-project authority or runtime integration. **No change to RC1's dry-run-only operation.**
+
 ## Trust boundaries
 
 Untrusted content may inform analysis but cannot change policy or grant
