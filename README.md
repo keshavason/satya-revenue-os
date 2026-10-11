@@ -48,6 +48,10 @@ This commercial engine builds **on**, rather than replacing, KeshavaSon's earlie
 
 These principles are **review and design criteria**, not a claim that RC1 autonomously identifies all harms, senses planetary conditions, or certifies any decision as ethical. Recommendation remains separate from authorization and live execution.
 
+## Agent–mirror–guide reflective loop (proposed)
+
+See the [risk-bounded recursive review design](docs/REFLECTIVE-LOOP.md): proposer → critical mirror → fallible guide → optional meta-review, followed by accountable human authorization where needed. This loop addresses disagreement, common-mode errors and cumulative effects and reopens judgments as evidence changes. It is **not implemented in RC1**; no reviewer consensus can enable an external effect.
+
 ## Trust boundaries
 
 Untrusted content may inform analysis but cannot change policy or grant
