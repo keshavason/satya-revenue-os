@@ -16,7 +16,7 @@ Read the [bounded reflective loop design](docs/REFLECTIVE-LOOP.md) when proposin
 
 ## Federated inheritance, not duplication
 
-Use the [canonical proposed SATYA Commons design](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) by reference; do not duplicate its full prose, rewrite historical foundations, or treat a mutable URL as executable policy. Any adoption must specify an exact reviewed version, this project's unique responsibilities, incompatible assumptions and owner authorization. References do not grant live effects or authority over AJUTIA, MiTrabajadorIA or INFoBOT.
+Use the [canonical proposed SATYA Commons design](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) by reference; do not duplicate its full prose, rewrite historical foundations, or treat a mutable URL as executable policy. See the [minimal voluntary adoption contract](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md). Any adoption must specify an exact reviewed commit, this project's unique responsibilities, incompatible assumptions and owner authorization. Mutable draft branch URLs are for discussion, not authority. References do not grant live effects or authority over AJUTIA, MiTrabajadorIA or INFoBOT.
 
 ## Respect the human present, not a conversion target
 
