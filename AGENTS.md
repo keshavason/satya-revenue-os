@@ -10,6 +10,10 @@ This project's commercial goals build on [KeshavaSon's ethical continuity](docs/
 - If material harm is unresolved or authorization insufficient, keep the decision pending and escalate for human review. Do not turn a prose principle into a claim of an implemented safety gate.
 - The foundation is open to scrutiny without religious affiliation; no external agent is required to install or endorse it.
 
+## Critical reflection (future design only)
+
+Read the [bounded reflective loop design](docs/REFLECTIVE-LOOP.md) when proposing multi-agent review. A proposer, independent mirror, fallible guide and optional meta-review must check harms and evidence at every level, preserve disagreement, consider aggregated effects, and respect time/depth limits. Shared model agreement is not verified truth; this repository does not currently instantiate these roles or grant them execution authority.
+
 ## Engineering boundaries
 
 - Preserve the separation between read, recommend, and execute.
