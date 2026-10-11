@@ -14,6 +14,8 @@ Every new layer inherits an earlier foundation rather than superseding it: **Ahi
 
 The opt-in [Presence without possession charter](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/PRESENCE-WITHOUT-POSSESSION.md) supplies synthetic adversarial review cases for consent, non-manipulative pricing and persuasion, respecting the user's present intention, and alternatives to automated channels. No customer's happiness, spirituality, or mental state is assessed or scored as evidence of readiness to buy. This is **guidance for future scope review**, not a claim that the RC1 runner enforces the charter.
 
+[Adoption across repositories](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md) is **not automatic**: require human owner acceptance, a pinned exact commit, documented local deviations and tests. Branch links are mutable drafts and confer no permission.
+
 Release roles are distinct:
 
 - implementation may be performed by humans or agents;
