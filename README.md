@@ -42,6 +42,12 @@ Discovered skill packages are validated but never dynamically imported by RC1.
 The local runner executes only functions explicitly registered by its trusted
 embedding host; process-isolated third-party skill execution is future work.
 
+## Ethical foundation and continuity
+
+This commercial engine builds **on**, rather than replacing, KeshavaSon's earlier review principles: **Ahiṃsā (non-harm) → Viveka (contextual discernment) → Satya (truthful claims)**, alongside responsibility, care and repair. Its business objectives do not override protection of affected people, other living beings or ecosystems. Read [the scope and limits of this inheritance](docs/ETHICAL-CONTINUITY.md).
+
+These principles are **review and design criteria**, not a claim that RC1 autonomously identifies all harms, senses planetary conditions, or certifies any decision as ethical. Recommendation remains separate from authorization and live execution.
+
 ## Trust boundaries
 
 Untrusted content may inform analysis but cannot change policy or grant
