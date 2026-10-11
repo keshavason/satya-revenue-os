@@ -9,7 +9,7 @@
 objective + typed inputs
  -> proposer: evidencia, propósito, afectados, riesgos (Ahiṃsā)
  -> mirror: objeciones, alternativas y consecuencias indirectas (Viveka)
- -> guide: revisión del desacuerdo; afirmaciones sustentadas (Satya)
+ -> domain teacher: conserva aportes válidos, enseña mejora concreta y propone prueba de transferencia; puede contrastar desacuerdos (Satya/Dharma)
  -> meta-review when material: dependencias, fallos comunes y daños agregados
  -> recorded recommendation | revise | pending | stop
  -> separately authenticated human approval + deterministic policy gate (future)
@@ -17,7 +17,7 @@ objective + typed inputs
  -> monitor impact, repair where possible, reopen when conditions change
 ```
 
-**Regla:** todos los niveles vuelven a evaluar Ahiṃsā → Viveka → Satya; la figura de «gurú» nombra una función crítica y humilde, **no una fuente de infalibilidad ni acceso superior**. El espejo necesita contraste real; varios modelos con los mismos datos no equivalen automáticamente a juicio independiente.
+**Regla:** todos los niveles vuelven a evaluar Ahiṃsā → Viveka → Satya; la figura de «gurú» nombra a un **maestro de competencia demostrable en un dominio**, que explica una mejora y comprueba su transferencia a otra tarea. No es una fuente de infalibilidad, autoridad espiritual, permisos o acceso superior. El dominio limita el alcance de su juicio. El espejo necesita contraste real; varios modelos con los mismos datos no equivalen automáticamente a juicio independiente.
 
 ## Invariantes que debe conservar una futura implementación
 
@@ -42,7 +42,7 @@ objective + typed inputs
 
 1. Proponer OpenSpec y definir contratos tipados con propietarios responsables.
 2. Decidir disparadores y presupuestos por riesgo, no una recursión perpetua en cada consulta.
-3. Probar en dry-run agentes con errores correlacionados y fuentes contradictorias; medir falsos positivos, falsos negativos, coste y latencia.
+3. Probar en dry-run agentes con errores correlacionados y fuentes contradictorias; medir falsos positivos, falsos negativos, coste y latencia. Comparar además un agente sin bucle, con espejo, y con maestro de dominio; comprobar transferencia en tarea independiente.
 4. Definir independencia de revisores, detección de circularidad, supervisión humana, gestión de incidentes y capacidad de parada.
 5. Solo considerar conectores reales después de pruebas específicas y autorización explícita.
 
@@ -50,4 +50,4 @@ objective + typed inputs
 
 ## English summary
 
-A future trusted host might orchestrate proposer → independent mirror → fallible guide → optional meta-review, with risk-bounded cycles and evidence-triggered reopening. Every review applies non-harm, discernment and truthfulness; it cannot grant its own permissions. RC1 remains local and dry-run-only; the recursive loop is **not implemented**. Never conflate agreement among agents with proof, authorization or environmental safety.
+A future trusted host might orchestrate proposer → independent mirror → domain teacher demonstrating transferable improvements → optional meta-review, with risk-bounded cycles and evidence-triggered reopening. Every review applies non-harm, discernment and truthfulness; it cannot grant its own permissions. RC1 remains local and dry-run-only; the recursive loop is **not implemented**. Never conflate agreement among agents with proof, authorization or environmental safety.
