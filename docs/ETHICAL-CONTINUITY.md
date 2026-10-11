@@ -2,7 +2,7 @@
 
 **Status:** non-binding design and review guidance for SATYA Revenue OS RC1, not an implemented AI moral faculty, environmental sensor, deploy gate or certification. RC1 remains local and dry-run-only.
 
-This project is a *downstream application* of the ethical foundation documented in [KeshavaSon's satya-review](https://github.com/keshavason/satya-review/blob/main/docs/ETHICAL-FOUNDATION.md) (link refers to the proposed foundation until its PR is merged). The shared principles do **not** imply a shared codebase, data transfer, live integration or imported authorization.
+This project is a *downstream application* of the ethical foundation documented in [KeshavaSon's satya-review](https://github.com/keshavason/satya-review/pull/3) (proposed foundation; not yet merged). The shared principles do **not** imply a shared codebase, data transfer, live integration or imported authorization.
 
 ## The foundation remains underneath every new layer
 
