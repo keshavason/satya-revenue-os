@@ -12,6 +12,8 @@ This project is a *downstream application* of the ethical foundation documented 
 4. **Dharma / human accountability:** protect delegated scope, exact approval, confidentiality, and separation between recommendation and effects. Reject policy override via untrusted content. Assign a responsible owner for consequential actions.
 5. **Prema / care and repair:** preserve dignity and autonomy, seek the least-harm feasible path, enable stop/rollback where possible, and document correction. Care is a design commitment, not a measured state of consciousness.
 
+**Historical continuity:** MiTrabajadorIA's earlier **Ahiṃsā → Satya → Dharma → Karma** is not overwritten: Viveka names cross-cutting discernment; Dharma preserves situated responsibility; Karma entails observing actual consequences and repair. Satya requires honesty from the first statement onward, not merely after harm analysis.
+
 **Important:** This is an ordering of *checks before action*, not an empirical claim that harms can always be eliminated, nor a universal algorithm for every moral trade-off. Sometimes preventing imminent harm requires a proportionate protective intervention. Such decisions are contextual and should not grant autonomous coercive authority to an LLM.
 
 ## Practical review before any eventual external effect
@@ -48,7 +50,7 @@ Until these invariants are implemented and tested within their claimed scope, re
 
 ## Federated expansion reference (draft)
 
-The [SATYA Commons federated expansion proposal](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) preserves this project's application-specific ethical continuity while maintaining **one reference foundation** in satya-review. A future integrator should adopt a pinned version explicitly, retain local controls and permissions, and publish a narrow domain adapter rather than duplicating principles across repositories. A documentation link is neither adoption nor a live interconnection. In particular, RC1 remains local and dry-run-only.
+The [SATYA Commons federated expansion proposal](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) preserves this project's application-specific ethical continuity while maintaining **one reference foundation** in satya-review. A future integrator should adopt a pinned version explicitly, retain local controls and permissions, and publish a narrow domain adapter rather than duplicating principles across repositories. The [minimal optional adoption contract](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md) requires explicit owner review, a pinned immutable commit, documented local limits and evidence. **These URLs point to a mutable draft branch for discussion, not an approved or adopted version.** A documentation link is neither adoption nor a live interconnection. In particular, RC1 remains local and dry-run-only.
 
 ## Conexión en español
 
