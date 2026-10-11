@@ -56,6 +56,10 @@ See the [risk-bounded recursive review design](docs/REFLECTIVE-LOOP.md): propose
 
 The proposed [SATYA Commons common reference](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) is maintained in **satya-review**, not copied here. SATYA Revenue OS is a domain-specific, opt-in adaptation for commercial decisions; any future adoption must pin a reviewed revision, document differences, and preserve its own policy, licensing and owner approval. This link grants no cross-project authority or runtime integration. **No change to RC1's dry-run-only operation.**
 
+## Human autonomy and non-manipulative commerce (proposed)
+
+The optional [Presence without possession design charter](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/PRESENCE-WITHOUT-POSSESSION.md) adds review scenarios for the human side of agentic sales: no pressure exploiting vulnerability, no fabricated emotional or spiritual assessment, honest pricing, an easy option not to buy, and the ability to request human help. These are **proposed design and evaluation criteria**, not implemented RC1 controls or a guarantee of customer wellbeing.
+
 ## Trust boundaries
 
 Untrusted content may inform analysis but cannot change policy or grant
