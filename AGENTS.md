@@ -18,6 +18,10 @@ Read the [bounded reflective loop design](docs/REFLECTIVE-LOOP.md) when proposin
 
 Use the [canonical proposed SATYA Commons design](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) by reference; do not duplicate its full prose, rewrite historical foundations, or treat a mutable URL as executable policy. Any adoption must specify an exact reviewed version, this project's unique responsibilities, incompatible assumptions and owner authorization. References do not grant live effects or authority over AJUTIA, MiTrabajadorIA or INFoBOT.
 
+## Respect the human present, not a conversion target
+
+For future human-facing workflows, refer to the optional [Presence without possession charter](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/PRESENCE-WITHOUT-POSSESSION.md): evaluate what a person currently asks, allow refusal and changing one's mind, avoid exploiting emotional vulnerability or spiritual claims for persuasion, and distinguish support from attempted conversion. Do not collect spiritual or happiness scores. **RC1 does not implement these evaluations automatically.**
+
 ## Engineering boundaries
 
 - Preserve the separation between read, recommend, and execute.
