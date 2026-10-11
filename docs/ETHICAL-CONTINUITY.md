@@ -46,6 +46,10 @@ Where a serious harm could occur and sufficient evidence or authorization is mis
 
 Until these invariants are implemented and tested within their claimed scope, report them as **design criteria**, not verified protections.
 
+## Federated expansion reference (draft)
+
+The [SATYA Commons federated expansion proposal](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) preserves this project's application-specific ethical continuity while maintaining **one reference foundation** in satya-review. A future integrator should adopt a pinned version explicitly, retain local controls and permissions, and publish a narrow domain adapter rather than duplicating principles across repositories. A documentation link is neither adoption nor a live interconnection. In particular, RC1 remains local and dry-run-only.
+
 ## Conexión en español
 
 El segundo ladrillo **no borra el primero**. La finalidad comercial queda subordinada a **Ahiṃsā** (evitar daños), **Viveka** (discernir contexto y consecuencias) y **Satya** (declarar con honestidad lo comprobado y lo incierto). La responsabilidad humana, el cuidado y la reparación acompañan toda decisión. El software actual todavía no verifica por sí mismo la armonía ecológica ni certifica decisiones éticas.
