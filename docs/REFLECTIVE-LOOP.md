@@ -1,53 +1,51 @@
-# SATYA Revenue OS · Bucle de agentes y espejos (diseño)
-## Reflective agent / mirror / guide / meta-review loop · RC1 proposal
+# SATYA Revenue OS · Bucle reflexivo
+## Documentary design v0.1 · Not implemented in RC1
 
-**Estado:** diseño para futuras versiones; **no implementado ni ejecutado** en RC1. Consulta el [protocolo de base en satya-review](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/REFLECTIVE-LOOP.md) y nuestra [continuidad ética](ETHICAL-CONTINUITY.md). Ambos pueden permanecer como propuestas sin fusionar.
+Consultar el [diseño de referencia fijado](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/REFLECTIVE-LOOP.md), la [continuidad ética](ETHICAL-CONTINUITY.md) y el [registro local de referencia](COMMONS-REFERENCE.md). Publicar este diseño no instancia revisores ni activa efectos externos.
 
 ## Propuesta para una decisión comercial
 
 ```text
-objective + typed inputs
- -> proposer: evidencia, propósito, afectados, riesgos (Ahiṃsā)
- -> mirror: objeciones, alternativas y consecuencias indirectas (Viveka)
- -> domain teacher: conserva aportes válidos, enseña mejora concreta y propone prueba de transferencia; puede contrastar desacuerdos (Satya/Dharma)
- -> meta-review when material: dependencias, fallos comunes y daños agregados
- -> recorded recommendation | revise | pending | stop
- -> separately authenticated human approval + deterministic policy gate (future)
- -> bounded live effect (future only) + receipt
- -> monitor impact, repair where possible, reopen when conditions change
+objetivo + entradas tipadas + alcance autorizado
+ -> agente: evidencia, propuesta, afectados y riesgos
+ <-> espejo: objeciones, alternativas y consecuencias omitidas
+ <-> maestro: conserva aportes válidos, explica una mejora y prueba transferencia
+ -> metarrevisión proporcional: dependencias y daños agregados, si procede
+ -> recomendación | revisar | pendiente | detener
+ -> autorización separada + controles deterministas (implementación futura)
+ -> efecto acotado, habilitado y autorizado (fuera de RC1)
+ -> observación, conciliación, reparación y revisión ante cambios
 ```
 
-**Regla:** todos los niveles vuelven a evaluar Ahiṃsā → Viveka → Satya; la figura de «gurú» nombra a un **maestro de competencia demostrable en un dominio**, que explica una mejora y comprueba su transferencia a otra tarea. No es una fuente de infalibilidad, autoridad espiritual, permisos o acceso superior. El dominio limita el alcance de su juicio. El espejo necesita contraste real; varios modelos con los mismos datos no equivalen automáticamente a juicio independiente.
+Todos los roles aplican conjuntamente no-daño, discernimiento, honestidad desde el inicio, responsabilidad, consecuencias y cuidado. «Gurú» designa aquí a un maestro con competencia demostrable en un dominio, no una autoridad espiritual, un permiso superior ni infalibilidad.
 
-## Invariantes que debe conservar una futura implementación
+No basta que varios modelos coincidan: declarar fuentes, dependencias e incentivos compartidos. Cuando todos repiten una premisa, buscar evidencia externa en vez de incrementar el número de aprobaciones.
 
-- **Sin autoridad emergente:** ni mayoría de agentes ni revisión de revisión autoriza por sí misma emails, cobros, CRM, publicación, gasto ni otros efectos.
-- **Sin autopromoción de información no confiable:** resultados de navegador, documentos, clientes y otros agentes pueden aportar evidencia, no cambiar permisos o reglas.
-- **Autonomía acotada:** la profundidad y el coste se fijan por operación y riesgo; si se exceden sin resolver, conservar `pending` o `stop`.
-- **Integridad epistemológica:** preservar opiniones contrarias, fuentes, fecha, estado de la afirmación y motivos de cada revisión; no confundir consenso con verdad.
-- **Afectados más allá del cliente:** terceros, grupos vulnerables, otros seres vivos, consumo de recursos y externalidades ecológicas; los microdaños pueden acumularse.
-- **Separar pasado, presente y revisión:** nuevos datos reabren expedientes y crean eventos nuevos, sin reescribir el historial.
-- **Intervención proporcional:** revisar también daños de no actuar, necesidad de protección, reversibilidad y alternativas menos dañinas.
-- **Humano responsable:** decisiones de alto impacto requieren gobernanza y autorización precisas fuera del texto generado.
+## Invariantes para implementaciones futuras
 
-## Encaje con la arquitectura actual
+- **Sin autoridad emergente:** ningún voto entre agentes autoriza mensajes, cobros, escrituras, publicaciones o gasto.
+- **Sin política desde datos no confiables:** documentos, herramientas y agentes aportan información, no permisos.
+- **Límites definidos antes del ciclo:** coste, tiempo y profundidad. Agotarlos sin resolver un riesgo material deja pendiente o detiene; no produce aprobación por cansancio.
+- **Disenso preservado:** registrar evidencia, fecha, alternativas y límites; la revisión puede corregir al autor o cliente.
+- **Afectados más allá del cliente:** contemplar terceros, seres vivos, recursos, ecosistemas y efectos acumulativos.
+- **Consecuencias observadas:** crear nuevos eventos y versiones al corregir; no falsificar el historial.
+- **No actuar también tiene efectos:** contrastar abstención, alternativas, protección proporcional y reversibilidad.
+- **Responsable identificable:** separar revisión AI, revisión humana, autorización y ejecución de la operación concreta.
 
-- **Core claims/provenance:** ubicación conceptual futura de afirmaciones, objeciones, incertidumbre y versiones de evidencia.
-- **Runtime/skills:** un host de confianza podría coordinar distintos revisores; RC1 actualmente solo ejecuta funciones registradas localmente.
-- **Policy/approval gateway:** un futuro control verificable impediría que una propuesta, incluso revisada, active efectos sin permiso.
-- **Run ledger:** guardar iteraciones como eventos con referencias padre, versiones, disensos y desencadenantes de reapertura. Los registros actuales no prueban independencia ni carácter ético.
-- **Domain/evals:** diseñar escenarios con daños agregados, falsa unanimidad, prompts hostiles, recursión sin término, autorización ausente y señal de daño tardía.
+## Encaje conceptual con RC1
 
-## Condiciones previas a programación
+Claims/provenance podrían registrar afirmaciones y objeciones; un host de confianza podría coordinar revisores; una pasarela separada tendría que comprobar permisos. El ledger podría enlazar iteraciones, disensos y reaperturas. La existencia de estas primitivas por separado no demuestra que ya implementen la orquestación descrita.
 
-1. Proponer OpenSpec y definir contratos tipados con propietarios responsables.
-2. Decidir disparadores y presupuestos por riesgo, no una recursión perpetua en cada consulta.
-3. Probar en dry-run agentes con errores correlacionados y fuentes contradictorias; medir falsos positivos, falsos negativos, coste y latencia. Comparar además un agente sin bucle, con espejo, y con maestro de dominio; comprobar transferencia en tarea independiente.
-4. Definir independencia de revisores, detección de circularidad, supervisión humana, gestión de incidentes y capacidad de parada.
-5. Solo considerar conectores reales después de pruebas específicas y autorización explícita.
+RC1 ejecuta funciones registradas localmente y no incorpora un conector comercial en vivo. Este cambio no modifica código, esquemas, CLI ni tests.
 
-**Truth boundary / Límite de verdad:** esta página es una arquitectura propuesta. Los roles no están instanciados como agentes remotos; no hay monitoreo ambiental, metarrevisor operativo, guardianes automáticos ni efectos comerciales en vivo. La documentación no modifica el esquema, la CLI o los tests existentes de RC1.
+## Antes de automatizar
+
+Proponer OpenSpec y contratos tipados; asignar responsables; definir presupuestos por riesgo, independencia y competencia por dominio. Comparar agente solo, agente con espejo y agente con maestro, controlando o declarando diferencias de recursos.
+
+Probar errores correlacionados, falsa unanimidad, fuentes contradictorias u obsoletas, instrucciones hostiles, permisos ausentes o revocados, efectos acumulativos y bucles sin fin. Comprobar además cuándo una revisión empeora una solución correcta y si la enseñanza se transfiere a una tarea distinta.
+
+Medir errores y correcciones, falsos positivos y negativos, coste, latencia, disenso y parada. No declarar resultados a partir de casos meramente propuestos. Conectores reales requieren otra autorización y pruebas específicas.
 
 ## English summary
 
-A future trusted host might orchestrate proposer → independent mirror → domain teacher demonstrating transferable improvements → optional meta-review, with risk-bounded cycles and evidence-triggered reopening. Every review applies non-harm, discernment and truthfulness; it cannot grant its own permissions. RC1 remains local and dry-run-only; the recursive loop is **not implemented**. Never conflate agreement among agents with proof, authorization or environmental safety.
+This is a pinned, domain-specific design reference, not an implemented multi-agent runtime. A proposer, critical mirror, domain teacher demonstrating transferable improvements and optional meta-review use bounded cycles. All commitments apply concurrently; no consensus grants permissions. RC1 stays local and dry-run-only. Independent review, comparative efficacy and live-effect safeguards remain to be demonstrated before operational adoption.
