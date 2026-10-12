@@ -1,28 +1,28 @@
 # Governance
 
-Maintainers accept changes through evidence-backed review. Material behavior
-changes require an OpenSpec proposal, tests, risk/decision updates, migration and
-rollback notes, provenance, and license review.
+Maintainers accept changes through evidence-backed review. Material behavior changes require an OpenSpec proposal, tests, risk/decision updates, migration and rollback notes, provenance, and license review.
 
-## Ethical precedence
+## Ethical commitments apply together
 
-Every new layer inherits an earlier foundation rather than superseding it: **Ahiṃsā (non-harm) before Viveka (discernment), and both before Satya (truthful assertions)**. Business gains do not excuse unjustified harm. Review must consider affected people, non-human life, ecosystems, uncertainty, safer alternatives and proportionate responses. Neither a model nor a maintainer may treat a person's alleged lack of “harmony” as withdrawal of their dignity or protections.
+Ahiṃsā guides purposes and constrains means; Viveka examines context; Satya requires honesty in every claim from the outset. Dharma defines responsibility and legitimate authority; Karma requires observing consequences and correction; Prema supports care without instrumentalizing people. No sequence postpones truthfulness or erases historical commitments.
 
-[Detailed ethical continuity and operational limits](ETHICAL-CONTINUITY.md) are design expectations; they do not imply the current system verifies ethics, ecology or wellbeing. Serious risks, unresolved facts or missing authorization warrant a pending/stop outcome and human assessment.
+Business gains do not excuse unjustified harm. Review considers affected people, non-human life, ecosystems, uncertainty, lower-harm alternatives and proportionate responses. A person's alleged lack of harmony never removes dignity or protections.
 
-## Human-centered commercial conduct — proposed extension
+[Ethical continuity](ETHICAL-CONTINUITY.md) describes design expectations, not proof that RC1 verifies ethics, ecology or wellbeing. Unresolved serious risk or missing authorization warrants a pending/stop outcome for the affected operation and appropriate human assessment.
 
-The opt-in [Presence without possession charter](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/PRESENCE-WITHOUT-POSSESSION.md) supplies synthetic adversarial review cases for consent, non-manipulative pricing and persuasion, respecting the user's present intention, and alternatives to automated channels. No customer's happiness, spirituality, or mental state is assessed or scored as evidence of readiness to buy. This is **guidance for future scope review**, not a claim that the RC1 runner enforces the charter.
+## Human-centered commercial conduct
 
-[Adoption across repositories](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md) is **not automatic**: require human owner acceptance, a pinned exact commit, documented local deviations and tests. Branch links are mutable drafts and confer no permission.
+The [Presence without possession proposal at the pinned upstream revision](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/PRESENCE-WITHOUT-POSSESSION.md) provides review scenarios for consent, non-manipulative pricing, current intention and alternatives to automated channels. Do not score happiness, spirituality or mental state as readiness to buy. This is future design guidance, not a claim that the runner enforces those evaluations.
 
-Release roles are distinct:
+The [adoption contract at the same revision](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/ADOPTION-CONTRACT.md) requires explicit owner acceptance, exact source revision, local differences and evidence. Identified copies and independent adaptations are permitted under the applicable license; remote updates never change local policy automatically. The [local documentary reference](COMMONS-REFERENCE.md) is not runtime adoption.
 
-- implementation may be performed by humans or agents;
-- AI review must be labeled AI;
-- human approval must identify the actual human role and exact candidate;
-- changing the candidate invalidates prior exact-version review.
+## Release roles and publication scope
 
-Security reports remain private. Commercial stakeholders may challenge metrics,
-claims, and defaults. No spiritual, moral, or dignity score is assigned to users,
-customers, contributors, or businesses.
+- Implementation and documentary drafting may be performed by humans or agents; AI review must be labeled AI.
+- Human approval identifies the actual role, scope and exact candidate. Changing a candidate invalidates an earlier review of that exact version.
+- Maintainer authorization to publish a documentary proposal does not establish independent human peer review, operational approval or comparative effectiveness. Outstanding evaluation must remain visible.
+- Publishing protocols does not authorize publishing private work, conversations, customer information or reviewer contact details.
+- Evidence status, editorial status, actual human review, rights and publication permission remain separate. A successful CI run is not ethical or legal certification.
+- Any merge respects repository protection. A failed approval or check is not bypassed by direct writes, force updates or a different publication path.
+
+Security reports remain private. Stakeholders may challenge metrics, claims and defaults. No moral, spiritual or dignity score is assigned to people or businesses. Live connectors and new runtime behavior remain outside this documentary publication and require separately scoped review and tests.
