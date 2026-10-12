@@ -1,12 +1,18 @@
 # SATYA Revenue OS
 
-SATYA Revenue OS is an open, local-first commercial decision system for humans
-and AI agents. It turns typed business inputs into evidence-bounded plans,
-calculations, experiments, and review artifacts while keeping recommendation
-separate from execution.
+SATYA Revenue OS is an open, local-first commercial decision system for humans and AI agents. It turns typed business inputs into evidence-bounded plans, calculations, experiments and review artifacts while keeping recommendation separate from execution.
 
-> RC1 status: local candidate under construction. It performs no live outreach,
-> CRM writes, publication, payments, or other external commercial effects.
+> RC1 status: local candidate under construction. It performs no live outreach, CRM writes, publication, payments or other external commercial effects.
+
+## SATYA Commons v0.1 — documentary commercial adaptation
+
+The [local reference and publication scope](docs/COMMONS-REFERENCE.md) pins [SATYA Commons v0.1](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/SATYA-COMMONS.md) at commit `f63587e5f16dc103d1369b40630ccaef5347a29d`. This is public design and review guidance, not an operational multi-agent federation or ethical certification.
+
+Read [ethical continuity](docs/ETHICAL-CONTINUITY.md), the [commercial reflective-loop design](docs/REFLECTIVE-LOOP.md) and [governance](docs/GOVERNANCE.md). Non-harm, discernment, truthfulness from the outset, legitimate responsibility, consequence review and care apply together. A teacher explains transferable improvements; a mirror preserves substantive objections; reviewer agreement cannot grant permissions.
+
+The source remains versioned rather than silently copied or overwritten. Identified archives and independent adaptations are possible under the applicable license; upstream updates never change local policy automatically. The human-facing design calls for honest conditions, respect for current intent, an option not to buy and no exploitation of vulnerability or spiritual claims.
+
+**This publication changes documentation only.** It does not instantiate reviewers, share data, connect AJUTIA, MiTrabajadorIA or INFoBOT, or add live effects to RC1. AI-assisted review and maintainer publication authorization are disclosed; independent human peer review and comparative evaluation are not claimed. Private work and conversations are not authorized for disclosure by using the protocols.
 
 ## Quickstart
 
@@ -30,45 +36,24 @@ node bin/satya-revenue.mjs run market-research examples/saas/market-research-inp
 
 ## What is implemented in RC1
 
-- typed claims, provenance, memory, approvals, effect receipts, and run events;
+- typed claims, provenance, memory, approvals, effect receipts and run events;
 - bounded skill planning and a dry-run-only effect gateway;
-- unit economics, experiment checks, attribution classes, and forecasting checks;
+- unit economics, experiment checks, attribution classes and forecasting checks;
 - Agent Skills-compatible packages with stricter SATYA manifests;
-- SaaS, ecommerce, professional-services, local-business, hospitality, and
-  industrial-B2B adapters;
-- offline unit, integration, scenario, failure, regression, and adversarial evals.
+- SaaS, ecommerce, professional-services, local-business, hospitality and industrial-B2B adapters;
+- offline unit, integration, scenario, failure, regression and adversarial evals.
 
-Discovered skill packages are validated but never dynamically imported by RC1.
-The local runner executes only functions explicitly registered by its trusted
-embedding host; process-isolated third-party skill execution is future work.
+Discovered skill packages are validated but never dynamically imported by RC1. The local runner executes only functions explicitly registered by its trusted embedding host; process-isolated third-party skill execution is future work.
 
-## Ethical foundation and continuity
-
-This commercial engine builds **on**, rather than replacing, KeshavaSon's earlier review principles: **Ahiṃsā (non-harm) → Viveka (contextual discernment) → Satya (truthful claims)**, alongside responsibility, care and repair. Its business objectives do not override protection of affected people, other living beings or ecosystems. Read [the scope and limits of this inheritance](docs/ETHICAL-CONTINUITY.md).
-
-These principles are **review and design criteria**, not a claim that RC1 autonomously identifies all harms, senses planetary conditions, or certifies any decision as ethical. Recommendation remains separate from authorization and live execution.
-
-## Agent–mirror–guide reflective loop (proposed)
-
-See the [risk-bounded recursive review design](docs/REFLECTIVE-LOOP.md): proposer → critical mirror → fallible guide → optional meta-review, followed by accountable human authorization where needed. This loop addresses disagreement, common-mode errors and cumulative effects and reopens judgments as evidence changes. It is **not implemented in RC1**; no reviewer consensus can enable an external effect.
-
-## Federated expansion without duplication (proposal)
-
-The proposed [SATYA Commons common reference](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) is maintained in **satya-review**, not copied here. SATYA Revenue OS is a domain-specific, opt-in adaptation for commercial decisions; any future adoption must pin a reviewed revision, document differences, and preserve its own policy, licensing and owner approval. A future owner may use the [minimal adoption contract](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md) to record an exact commit, scope, differences, tests and rollback. **The links above are mutable draft-branch links for review, not a version lock.** This link grants no cross-project authority or runtime integration. **No change to RC1's dry-run-only operation.**
-
-## Human autonomy and non-manipulative commerce (proposed)
-
-The optional [Presence without possession design charter](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/PRESENCE-WITHOUT-POSSESSION.md) adds review scenarios for the human side of agentic sales: no pressure exploiting vulnerability, no fabricated emotional or spiritual assessment, honest pricing, an easy option not to buy, and the ability to request human help. These are **proposed design and evaluation criteria**, not implemented RC1 controls or a guarantee of customer wellbeing.
+The proposed reflective roles, behavioral care evaluations and federated exchange layer are **not implemented by listing them in documentation**. Existing tests do not establish their efficacy.
 
 ## Trust boundaries
 
-Untrusted content may inform analysis but cannot change policy or grant
-authority. `read` is not `write`; `recommend` is not `execute`. Every effect is
-declared, provenance checked, policy checked, idempotent, and represented by a
-tenant-scoped receipt. RC1 ships no live effect connector.
+Untrusted content may inform analysis but cannot change policy or grant authority. `read` is not `write`; `recommend` is not `execute`. The scoped gateway design separates declarations, provenance, policy checks, idempotency and tenant-scoped receipts. RC1 ships no live effect connector. A documentary recommendation or matching hash is not an authenticated human approval.
 
 ## Documentation
 
+- [Commons reference and publication scope](docs/COMMONS-REFERENCE.md)
 - [Quickstart](docs/QUICKSTART.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Skill specification](docs/SKILLS.md)
@@ -77,18 +62,14 @@ tenant-scoped receipt. RC1 ships no live effect connector.
 - [Security model](docs/SECURITY-MODEL.md)
 - [Threat model](docs/THREAT-MODEL.md)
 - [Governance](docs/GOVERNANCE.md)
-- [Branch protection](docs/BRANCH-PROTECTION.md)
+- [Branch-protection recommendations](docs/BRANCH-PROTECTION.md)
 - [Integration boundaries](docs/INTEGRATIONS.md)
 - [Versioning](docs/VERSIONING.md)
 
 ## Contributing and security
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md). Do not
-report vulnerabilities in public issues. This project is not a compliance,
-legal, financial, or human ethical certification.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md). Do not report vulnerabilities in public issues. This project is not a compliance, legal, financial or human ethical certification. A successful CI run applies to its exact candidate and test scope, not every claim about the protocol.
 
 ## License
 
-Original code and documentation are prepared under Apache-2.0. Third-party
-sources are references only unless explicitly listed in
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Original local code and documentation remain under [Apache-2.0](LICENSE). The linked Commons source retains its own MIT license; referencing it does not relicense either project or grant rights over third-party data. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
