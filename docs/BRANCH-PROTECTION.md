@@ -1,6 +1,6 @@
 # Branch-protection recommendation
 
-Before a public remote is created, protect `main` with:
+Recommended protection for `main`:
 
 - pull requests required, including one independent approving review;
 - dismissal of stale approvals after changes;
@@ -11,5 +11,4 @@ Before a public remote is created, protect `main` with:
 - signed commits or verified signatures considered according to contributor access;
 - CI token permissions read-only unless a separate, reviewed release workflow needs more.
 
-This is a recommendation, not evidence that repository settings are currently
-configured. RC1 has no remote.
+These are recommendations, not evidence that all repository settings are configured. This repository now has a public GitHub remote; that does not change RC1's local, dry-run-only execution model. Administrative protection settings have not been verified by this documentary review. Do not bypass any protection or approval requirement actually enforced by GitHub.
