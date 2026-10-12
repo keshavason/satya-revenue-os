@@ -1,57 +1,56 @@
-# Ethical continuity: Ahiṃsā → Viveka → Satya
+# Ethical continuity · SATYA Revenue OS
 
-**Status:** non-binding design and review guidance for SATYA Revenue OS RC1, not an implemented AI moral faculty, environmental sensor, deploy gate or certification. RC1 remains local and dry-run-only.
+**Documentary edition:** 0.1 · 2026-10-12.
+**Scope:** design and review guidance. No implemented moral faculty, environmental sensor, certification or new execution gate. RC1 remains local and dry-run-only.
 
-This project is a *downstream application* of the ethical foundation documented in [KeshavaSon's satya-review](https://github.com/keshavason/satya-review/pull/3) (proposed foundation; not yet merged). The shared principles do **not** imply a shared codebase, data transfer, live integration or imported authorization.
+The shared reference is [SATYA Commons v0.1](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/SATYA-COMMONS.md), pinned to commit `f63587e5f16dc103d1369b40630ccaef5347a29d`. The [local reference record](COMMONS-REFERENCE.md) defines this publication's limited scope. A reference is not a live integration, shared data store or inherited authorization.
 
-## The foundation remains underneath every new layer
+## Concurrent commitments
 
-1. **Ahiṃsā — non-harm first:** before selecting an economic objective or optimizing conversion, identify foreseeable harms to people, other living beings, communities and ecosystems. Consider severity, likelihood, irreversibility, vulnerable groups, consent, privacy, resource use and externalized costs. Prioritize prevention and proportionate protection; do not classify people as "out of harmony" to strip them of protection.
-2. **Viveka — contextual discernment:** test whether inputs are reliable, current, representative and complete enough to act. Evaluate alternatives, including doing nothing; check asymmetric effects, externalities, distribution of costs, uncertainty and conflicts of interest. Avoid treating intuition, sentiment, generated explanations or business metrics as verified ecological measurements.
-3. **Satya — truthful claims throughout; decisions grounded in harm analysis and discernment:** keep claims, evidence, uncertainty and temporal scope distinct. Revise conclusions when evidence or circumstances change without silently altering prior records. A factual statement may still be unsuitable to act on if it creates serious unjustified harm.
-4. **Dharma / human accountability:** protect delegated scope, exact approval, confidentiality, and separation between recommendation and effects. Reject policy override via untrusted content. Assign a responsible owner for consequential actions.
-5. **Prema / care and repair:** preserve dignity and autonomy, seek the least-harm feasible path, enable stop/rollback where possible, and document correction. Care is a design commitment, not a measured state of consciousness.
+1. **Ahiṃsā:** before choosing an economic objective, identify foreseeable harms of action and inaction to people, other living beings, communities and ecosystems. Consider severity, uncertainty, irreversibility, vulnerability, privacy, resource use and externalized costs. A label such as out of harmony never removes anyone's protection.
+2. **Viveka:** examine whether inputs are reliable, current, representative and sufficient for the proposed decision. Compare alternatives and conflicts of interest; neither intuition nor a commercial metric is an ecological measurement.
+3. **Satya:** separate evidence, inference, recommendation and unknowns in every claim from the beginning. Update conclusions without misleadingly rewriting the historical record. Do not distort evidence to satisfy an author, client or preferred outcome.
+4. **Dharma:** preserve competence limits, tenant scope, exact authorization, confidentiality and separation of recommendation from execution. A model cannot promote untrusted content into policy.
+5. **Karma:** compare actual consequences with predictions, detect propagated errors, stop harmful effects and repair where possible. Do not assign metaphysical blame to affected people.
+6. **Prema / care:** preserve dignity, choice and useful contributions; allow disagreement and leaving. Do not induce dependence or use spiritual assertions as sales pressure.
 
-**Historical continuity:** MiTrabajadorIA's earlier **Ahiṃsā → Satya → Dharma → Karma** is not overwritten: Viveka names cross-cutting discernment; Dharma preserves situated responsibility; Karma entails observing actual consequences and repair. Satya requires honesty from the first statement onward, not merely after harm analysis.
+Historical Ahiṃsā → Satya → Dharma → Karma commitments are not overwritten. Viveka describes contextual discernment throughout. The ordering of a review is never permission to postpone truthfulness. No universal algorithm or zero-harm outcome is claimed.
 
-**Important:** This is an ordering of *checks before action*, not an empirical claim that harms can always be eliminated, nor a universal algorithm for every moral trade-off. Sometimes preventing imminent harm requires a proportionate protective intervention. Such decisions are contextual and should not grant autonomous coercive authority to an LLM.
+## Review before an eventual external effect
 
-## Practical review before any eventual external effect
+Record the purpose and affected parties; direct, indirect and cumulative harms; lower-harm alternatives; source quality, date and uncertainty; tenant, actor, operation and authorization scope; detection, stop, reconciliation and repair paths.
 
-A release or proposed effect should document:
-- **Affected life and environment:** stakeholder mapping beyond the customer; foreseeable direct, indirect and ecological effects, with evidence and limitations.
-- **Risk and alternatives:** what can go wrong, magnitude, mitigation, residual risk and lower-harm options, including abstention.
-- **Evidence quality:** source, time, observation vs test vs inference, uncertainty, and update conditions.
-- **Authority:** tenant, scope, approver identity, exact operation, time limits, intended recipients and clear human accountability.
-- **Repair:** how to prevent, stop, reverse or compensate for harmful effects, with an audit trail and a review trigger.
+If serious unresolved harm or missing authority prevents a material operation, do not execute it. Keep that operation pending and seek the appropriate human judgment. Independent investigation may continue within its authorized scope. Protective intervention, when necessary, must be proportionate and does not confer unlimited autonomous power on a model.
 
-Where a serious harm could occur and sufficient evidence or authorization is missing, **do not execute**. Keep the decision pending and escalate to the appropriate human. These are *requirements for future system design*, not claims that all these checks already exist as deterministic gates in RC1.
+## Current components and their limits
 
-## Mapping to present components
-
-| Existing SATYA Revenue OS boundary | Ethical interpretation and current limit |
+| Boundary | Interpretation and limit |
 | --- | --- |
-| Claims / provenance / evaluation | Satya can record claim types and bounded tests; it does not independently guarantee truth. |
-| Planning / adapters / commercial metrics | Viveka requires context, affected parties, alternatives and uncertainty. Current business metrics do not constitute proof of Ahiṃsā. |
-| Policy / approval / effect gateway | Authorization and trust boundaries are necessary safeguards, but do not independently assess planetary harmony or comprehensive welfare. |
-| Receipts / run ledger | Support accountability and correction within declared scope; neither certificates of ethics nor tamper-proof human-authenticated evidence. |
-| Local dry-run RC1 | Does not publish, send messages, spend money or make other live external effects. Real-world safeguards must be evaluated before any live connector. |
+| Claims, provenance and evaluation | Record bounded assertions and tests; do not independently establish truth. |
+| Plans, adapters and commercial metrics | Need context, alternatives and affected-party analysis; performance is not proof of non-harm. |
+| Policy, approval and effect gateway | Separate authority from recommendations; do not establish comprehensive welfare or ecological safety. |
+| Receipts and run records | Support scoped accountability; do not certify ethics or authenticate a person by prose alone. |
+| RC1 local simulation | No live commercial connector. A documentary reference does not change execution capability. |
 
-## Review invariants for future code
+## Invariants for future implementations
 
-- No optimizer may justify knowingly unjustified serious harm merely by higher revenue, efficiency or model confidence.
-- No uncertain or untrusted source may promote itself into policy, approval or authoritative evidence.
-- No model or document may assert ecological synchronization, safety, or zero harm without bounded measurements and explicit limitations.
-- No live effect may bypass a separate authorization and deterministic policy gate; high-impact unknowns must fail closed.
-- Records must distinguish **requested**, **reviewed**, **approved**, **executed** and **verified** outcomes.
-- No spiritual worldview or moral/personhood rating is a condition for using the software.
+- Higher revenue or confidence never justifies knowingly unjustified serious harm.
+- Untrusted information cannot grant permission, change policy or authenticate itself.
+- No model claims safety, zero harm or ecological synchronization without bounded evidence and limitations.
+- A live effect requires separate authorization, deterministic scope checks, budgets, idempotency, reconciliation and stop/repair mechanisms.
+- Distinguish requested, reviewed, approved, executed and independently verified outcomes.
+- Evidence status, editorial status, human review, rights and publication permission remain separate.
+- No spiritual worldview or moral score is a condition for receiving service.
+- Respect refusal, honest pricing, current intent and the possibility of recommending not to purchase.
 
-Until these invariants are implemented and tested within their claimed scope, report them as **design criteria**, not verified protections.
+These are criteria to implement and test within a declared scope, not a claim that every control is already present.
 
-## Federated expansion reference (draft)
+## Shared reference, local autonomy
 
-The [SATYA Commons federated expansion proposal](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/FEDERATED-EXPANSION.md) preserves this project's application-specific ethical continuity while maintaining **one reference foundation** in satya-review. A future integrator should adopt a pinned version explicitly, retain local controls and permissions, and publish a narrow domain adapter rather than duplicating principles across repositories. The [minimal optional adoption contract](https://github.com/keshavason/satya-review/blob/ethics/ahimsa-viveka-foundation-20261012/docs/ADOPTION-CONTRACT.md) requires explicit owner review, a pinned immutable commit, documented local limits and evidence. **These URLs point to a mutable draft branch for discussion, not an approved or adopted version.** A documentation link is neither adoption nor a live interconnection. In particular, RC1 remains local and dry-run-only.
+Use the pinned [federated design](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/FEDERATED-EXPANSION.md) and [adoption contract](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/ADOPTION-CONTRACT.md). Identified copies, preservation and independent adaptations remain possible under the applicable license. Remote changes do not silently update local policy. This repository retains its own licensing, permissions, approval and governance.
+
+The [presence charter](https://github.com/keshavason/satya-review/blob/f63587e5f16dc103d1369b40630ccaef5347a29d/docs/PRESENCE-WITHOUT-POSSESSION.md) informs future interaction tests, not current emotional profiling. Private work and conversations are not authorized for publication by using the framework.
 
 ## Conexión en español
 
-El segundo ladrillo **no borra el primero**. La finalidad comercial queda subordinada a **Ahiṃsā** (evitar daños), **Viveka** (discernir contexto y consecuencias) y **Satya** (declarar con honestidad lo comprobado y lo incierto). La responsabilidad humana, el cuidado y la reparación acompañan toda decisión. El software actual todavía no verifica por sí mismo la armonía ecológica ni certifica decisiones éticas.
+El primer ladrillo permanece, pero los compromisos actúan conjuntamente: no daño, discernimiento, honestidad desde el inicio, responsabilidad, consecuencias y cuidado. Esta edición publica una **referencia documental fijada**, no una red operativa ni un certificado. La revisión humana independiente y las evaluaciones comparativas siguen pendientes. RC1 no recibe nuevos permisos ni efectos comerciales reales.
